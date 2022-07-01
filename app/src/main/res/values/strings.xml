@@ -10,5 +10,15 @@
     <string name="dog_life_expectancy_format">%s</string>
     <string name="unknown_host_exception_error">There is no internet connection</string>
     <string name="unknown_error">There was an error</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="do_not_have_an_account">Do not have an account?</string>
+    <string name="register">REGISTER</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="email_is_not_valid">Email is not valid</string>
+    <string name="password_must_not_be_empty">Password must not be empty</string>
+    <string name="passwords_do_not_match">Passwords do not match</string>
 
 </resources>
