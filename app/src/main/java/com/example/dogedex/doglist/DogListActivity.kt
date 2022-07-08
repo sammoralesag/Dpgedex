@@ -7,7 +7,6 @@ import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.dogedex.api.ApiResponseStatus
 import com.example.dogedex.databinding.ActivityDogListBinding
 import com.example.dogedex.dogdetail.DogDetailActivity
@@ -34,9 +33,13 @@ class DogListActivity : AppCompatActivity() {
         adapter.setOnItemClickListener {
             val intent = Intent(this, DogDetailActivity::class.java)
             intent.putExtra(DOG_KEY, it)
-
             startActivity(intent)
         }
+
+       adapter.setLongOnItemClickListener{
+           dogListViewModel.addDogToUser(it.id)
+       }
+
         recycler.adapter = adapter
 
         dogListViewModel.dogList.observe(this) { dogList ->

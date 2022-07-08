@@ -28,5 +28,6 @@
     <string name="this_is_a_content_description">this is a content description</string>
     <string name="logout">Logout</string>
     <string name="error_adding_dog">"There was an error adding dog to collection "</string>
+    <string name="camera_permision_rejected_message">\"You need to accept camera permission to use camera \"</string>
 
 </resources>
